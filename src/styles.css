@@ -1,0 +1,170 @@
+body {
+  background-color: hsl(185, 41%, 84%);
+  font-family: monospace;
+  background-image:url(../logo.svg);
+  background-repeat:no-repeat;
+  background-position: 50% 10%;
+  
+  
+}
+#container {
+  border-radius: 10px;
+  padding: 2%;
+  display: flex;
+  background-color: hsl(0, 0%, 100%);
+  align-content: center;
+  justify-content: center;
+
+  width: 50vw;
+  height: 52vh;
+  margin: auto;
+  margin-top: 12%;
+}
+
+#bill-input {
+
+
+  width: 80%;
+  height: 15px;
+  background: url(icon-dollar.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+  text-align: right;
+  padding: 5%;
+  border: none;
+  background-color: hsl(172, 67%, 45%);
+}
+
+#bill-input-2 {
+  background-image:url(../icon-dollar.svg);
+  text-align: right;
+  background-repeat:no-repeat;
+  background-position:2%;
+  border-radius:4px;
+  font-weight: 600;
+  height:2px;
+}
+#bill-input-2:focus{
+  /* border-width:3px; */
+  /* border-color:hsl(172, 67%, 45%); */
+  outline:2px solid hsl(172, 67%, 45%);
+
+ 
+}
+
+
+#card {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(186, 14%, 43%);
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3%;
+  gap: 6%;
+}
+#card2 {
+  background-color: hsl(183, 100%, 15%);
+  width: 50%;
+  border-radius: 10px;
+  color: hsl(0, 0%, 100%);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+input[type="text"] {
+  background-color: hsl(189, 41%, 97%);
+  padding: 5px;
+  border: 0;
+  text-align: left;
+}
+.inputData {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #d9d9d9;
+  width: 100%;
+  box-sizing: border-box;
+}
+.digit {
+  position: relative;
+  padding-left: 0px;
+}
+
+
+#person {
+  color: hsl(172, 67%, 45%);
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+}
+
+#number-of-people {
+  text-align: right;
+  background-image:url(/tip-calculator/icon-person.svg);
+  font-weight: 600;
+  height:2px;
+ 
+}
+#number-of-people:focus{
+ outline:2px solid hsl(172, 67%, 45%)
+}
+
+.button {
+  background-color: hsl(183, 100%, 15%);
+  color: hsl(189, 41%, 97%);
+  border: none;
+  margin: 4px 2px;
+  padding: 8px 20px;
+  text-align: center;
+  border-radius: 2px;
+  display: inline;
+  width: 70px;
+  font-family: monospace;
+}
+
+
+#custom {
+  color: hsl(183, 100%, 15%);
+  background-color: hsl(189, 41%, 97%);
+  border: none;
+  margin: 4px 2px;
+  padding: 8px 1px;
+  border-radius: 2px;
+  width: 70px;
+  text-align: center;
+  /* color: hsl(186, 14%, 43%); */
+  font-weight: 600;
+}
+
+.secondrow {
+  padding-left: 0px;
+  margin-top: 0px;
+}
+.input-icons i {
+  position: absolute;
+}
+.input-icons {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.input-field {
+  width: 80%;
+  height: 20px;
+  border-radius:6px;
+  background-repeat: no-repeat;
+  background-position: 12px;
+  text-align: right;
+  padding: 5%;
+  border: none;
+  background-color: hsl(189, 41%, 97%);
+}
+.register {
+  background-color: hsl(184, 23%, 36%);
+  padding: 15px 15px 15px 15px;
+  border: 0;
+  text-align: center;
+  border-radius: 8px;
+  width: 80%;
+  color: hsl(171, 44%, 12%);
+}

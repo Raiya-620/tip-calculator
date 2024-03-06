@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+    <title>tip-calculator</title>
+  </head>
+  <body>
+    <div id="container">
+      <div id="card" style="font-weight: 900">
+        <div
+          style="display: flex; flex-direction: column; gap: 8px"
+          class="bill"
+        >
+          <label for="bill-input">Bill</label>
+          <input
+          min="0"
+            id="bill-input-2"
+            class="input-field"
+            type="number"
+            placeholder="0"
+          />
+        </div>
+
+        <div class="select-tip">
+          <p class="select-tip-title">Select Tip %</p>
+          <div id="all-buttons" class="allbuttons">
+            <button class="button">5%</button>
+            <button class="button">10%</button>
+            <button class="button">15%</button>
+            <div class="secondrow">
+              <button class="button">25%</button>
+              <button class="button">50%</button>
+              <input
+                min="0"
+                class="button"
+                type="number"
+                id="custom"
+                placeholder="Custom"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="people">
+          <div
+            style="display: flex; width: 89%; justify-content: space-between"
+          >
+            <p class="people-title">Number of People</p>
+            <p style="color: red" id="error-message"></p>
+          </div>
+          <!-- <label for="number-of-people"></label> -->
+          <input
+          min="0"
+            class="input-field"
+            type="number"
+            id="number-of-people"
+            placeholder="0"
+          />
+        </div>
+      </div>
+      <div style="display: flex; gap: 30%" id="card2">
+        <div style="display: flex; flex-direction: column; gap: 40px">
+          <div
+            class="tip-amount"
+            style="display: flex; justify-content: space-between"
+          >
+            <div
+              class="headings"
+              style="display: flex; flex-direction: column; gap: 10px"
+            >
+              <div class="heading-1">Tip Amount</div>
+              <div style="color: hsl(172, 67%, 45%)" class="heading-2">
+                / person
+              </div>
+            </div>
+            <div
+              style="
+                text-align: right;
+                font-size: 30px;
+                color: hsl(172, 67%, 45%);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: 700;
+              "
+              class="value"
+              id="tip-amount-value"
+            >
+              $0.00
+            </div>
+          </div>
+
+          <div
+            class="tip-amount"
+            style="display: flex; justify-content: space-between"
+          >
+            <div
+              class="headings"
+              style="display: flex; flex-direction: column; gap: 10px"
+            >
+              <div class="heading-1">Total</div>
+              <div style="color: hsl(172, 67%, 45%)" class="heading-2">
+                / person
+              </div>
+            </div>
+            <div
+              style="
+                text-align: right;
+                font-size: 30px;
+                color: hsl(172, 67%, 45%);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: 700;
+              "
+              class="value"
+              id="total-value"
+            >
+              $0.00
+            </div>
+          </div>
+        </div>
+        <div style="margin: auto; font-weight: 900" id="reset" class="register">
+          RESET
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
